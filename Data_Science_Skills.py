@@ -12,7 +12,7 @@ t = Title().page_config(title)
 # Import data
 #jobs_all = DataImport().fetch_and_clean_data()
 
-data_url = 'data_source/fetch_clean_data.csv'
+data_url = 'https://drive.google.com/file/d/1E9W_egOIIOw4GXu9lkbK_l1jVrEN_bpA/view?usp=sharing'
 jobs_data = pd.read_csv(data_url)
 jobs_data = jobs_data.drop(labels=['Unnamed: 0', 'index'], axis=1, errors='ignore')
 jobs_data.description_tokens = jobs_data.description_tokens.str.strip("[]").str.split(",") # fix major formatting issues with tokens
