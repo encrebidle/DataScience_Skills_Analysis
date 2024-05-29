@@ -1,5 +1,5 @@
 streamlit==1.18.1
 pandas
 numpy
-altair
+altair==4.0
 htbuilder
