@@ -16,10 +16,10 @@ Title().page_config(title)
 
 
 # Import data
-#jobs_all = DataImport().fetch_and_clean_data()
+jobs_all = DataImport().fetch_and_clean_data()
 
-data_url = 'https://drive.google.com/file/d/1E9W_egOIIOw4GXu9lkbK_l1jVrEN_bpA/view?usp=sharing'
-jobs_all = pd.read_csv(data_url)
+#data_url = 'https://drive.google.com/file/d/1E9W_egOIIOw4GXu9lkbK_l1jVrEN_bpA/view?usp=sharing'
+#jobs_all = pd.read_csv(data_url)
 
 st.markdown("## 🌎 Explore the dataset")
 
