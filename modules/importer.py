@@ -17,5 +17,5 @@ class DataImport:
         jobs_data = jobs_data.drop(labels=['Unnamed: 0', 'index'], axis=1, errors='ignore')
         jobs_data.description_tokens = jobs_data.description_tokens.str.strip("[]").str.split(",") # fix major formatting issues with tokens
         jobs_data.description_tokens = jobs_data.description_tokens.apply(lambda row: [x.strip(" ") for x in row]) # remove whitespace from tokens
-        jobs_data.to_csv('data_source/fetch_clean_data.csv',index = False)
-        return 0
+        #jobs_data.to_csv('data_source/fetch_clean_data.csv',index = False)
+        return jobs_data
